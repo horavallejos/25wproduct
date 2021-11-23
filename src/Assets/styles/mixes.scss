@@ -1,0 +1,57 @@
+/* General Styles */
+
+@mixin my-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: $font-size16px;
+  text-align: left;
+  letter-spacing: $letter-spac22px;
+  line-height: $line-height21px;
+  color: $color-secondary;
+}
+
+@mixin my-h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: $font-size48px;
+  text-align: left;
+  letter-spacing: $letter-spac67px;
+  line-height: $line-height48px;
+  color: $color-secondary;
+}
+
+@mixin my-h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: $font-size39px;
+  text-align: left;
+  letter-spacing: $letter-spac55px;
+  line-height: $line-height45px;
+  color: $color-h2;
+}
+
+@mixin text-about {
+  @include my-text;
+  font-weight: 400;
+  line-height: $line-height28px;
+  color: $color-h2;
+}
+
+@mixin text-products {
+  @include my-text;
+  font-weight: 400;
+}
+
+@mixin h2-products {
+  @include my-h2;
+  font-weight: 500;
+  line-height: 3.5rem;
+  color: $color-secondary;
+}
+
+@mixin text-services {
+  @include my-text;
+  font-weight: 400;
+  line-height: $line-height28px;
+  color: $color-form;
+}

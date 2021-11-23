@@ -1,0 +1,46 @@
+@import '../../Assets/styles/var.scss';
+@import '../../Assets/styles/mixes.scss';
+
+.services {
+  border: 0.1px solid rgb(221, 219, 219);
+  background: $color-secondary;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.my-img-services{
+  height: 100%;
+  width: 56%;
+  object-fit: cover;
+}
+
+.my-container-services{  
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;  
+}
+
+.my-accordion{
+  height: 40%;
+  position: absolute;
+  top: 20%;  
+}
+
+.accordion-button{
+  @include my-text;  
+  color: $color-form;
+    
+  
+}
+
+.accordion-text{
+  @include text-services;
+   
+}

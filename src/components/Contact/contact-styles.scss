@@ -1,0 +1,134 @@
+@import "../../Assets/styles/var.scss";
+@import "../../Assets/styles/mixes.scss";
+
+.contact {
+  border: 0.1px solid rgb(221, 219, 219);
+  background: $bg-gradient;
+  width: 100vw;
+  height: 100vh;
+}
+
+.my-container-contact {
+  height: 100%;
+  display: flex;
+}
+
+.my-container__h2-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .contact-h2 {
+    @include my-h2;
+    margin-bottom: 2rem;
+
+    & span {
+      display: flex;
+      @include my-h2;
+      color: $color-brand;
+    }
+  }
+
+  .my-form {
+    margin-top: 2rem;
+    max-width: 80%;
+    label {
+      @include my-text;
+      font-size: 1.1rem;
+      color: $color-form;
+    }
+  }
+}
+
+#floating-inp {
+  @include my-text;
+  color: $color-form;
+  border-bottom-color: rgba(190, 190, 190, 1);
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.container-button {
+  .my-button {
+    min-height: 6vh;
+    min-width: 11vw;
+    margin-top: 2vh;
+    padding: 0;
+    background-color: $color-brand;
+    border-radius: 25px;
+    @include my-text;
+    text-align: center;
+  }
+}
+
+.contact-img {
+  background-image: url("../../Assets/images/contact-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 52%;
+  width: 50%;
+  align-self: center;
+}
+.vv {
+  @include my-text;
+  color: $color-brand;
+}
+
+.vvrr {
+  @include my-text;
+  opacity: 0.5;
+  color: $color-form;
+}
+
+.mensaje-alert {
+  min-width: 40%;
+  align-self: center;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.loading-msj {
+  @include my-text;
+  opacity: 0.5;
+  color: $color-form;
+}
+
+/* 
+
+
+
+
+.section-contact__h2 {
+  @include h2;
+  color: #343434;
+  grid-area: 1 / 1 / 1 / 5;
+  margin-right: 6.36vw;
+  margin-top: 15.6vh;
+     
+      & span {
+          @include h2;
+          color: $color-brand;
+                     
+      } 
+}
+
+#boton2 {
+  @include texto;
+  @include roboto-medium;
+  width: 10.54vw;
+  height: 6.25vh;
+  background-color: $color-brand;
+  border-radius: 25px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+} */

@@ -1,0 +1,24 @@
+/* Bootstrap Custom */
+
+$primary: $color-brand;
+
+$navbar-light-color: $color-secondary;
+$navbar-light-hover-color: $color-brand;
+$navbar-light-active-color: $color-secondary;
+
+$accordion-button-active-bg: $color-secondary;
+$accordion-icon-color: $color-brand;
+$accordion-icon-active-color: $color-brand;
+
+$container-padding-x: 0;
+
+$form-floating-height: 5rem;
+
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+
+
+
+
+
